@@ -11,7 +11,7 @@ config = {
     "unique": {"OAUTH2_SECRET": "{{ 24|random_string }}"},
     "defaults": {
         "VERSION": __version__,
-        "APP_HOST": "mobile.{{ LMS_HOST }}",
+        "APP_HOST": "courses.{{ LMS_HOST }}",
         "APP_VERSION": "3.0.2",  # https://github.com/edx/edx-app-android/releases
         "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}overhangio/openedx-android:{{ ANDROID_VERSION }}",
         "APP_DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}overhangio/openedx-android-app:{{ ANDROID_VERSION }}",
