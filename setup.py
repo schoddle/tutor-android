@@ -27,10 +27,10 @@ ABOUT = load_about()
 setup(
     name="tutor-android",
     version=ABOUT["__version__"],
-    url="https://github.com/overhangio/tutor-android",
+    url="https://github.com/schoddle/tutor-android",
     project_urls={
-        "Code": "https://github.com/overhangio/tutor-android",
-        "Issue tracker": "https://github.com/overhangio/tutor-android/issues",
+        "Code": "https://github.com/schoddle/tutor-android",
+        "Issue tracker": "https://github.com/schoddle/tutor-android/issues",
     },
     license="AGPLv3",
     author="Overhang.IO",
