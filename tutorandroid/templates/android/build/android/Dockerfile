@@ -28,8 +28,8 @@ RUN yes | /app/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOM
 
 # Install android app repo
 ARG ANDROID_APP_REPOSITORY=https://github.com/openedx/edx-app-android
-ARG ANDROID_APP_VERSION=release/master
-RUN git clone $ANDROID_APP_REPOSITORY --branch master /app/edx-app-android
+#ARG ANDROID_APP_VERSION=release/master
+RUN git clone $ANDROID_APP_REPOSITORY /app/edx-app-android
 WORKDIR /app/edx-app-android
 
 # Install gradle and all dependencies
