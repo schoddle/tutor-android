@@ -27,9 +27,9 @@ ARG ANDROID_API_LEVEL=30
 RUN yes | /app/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --install "platforms;android-$ANDROID_API_LEVEL" 1> /dev/null
 
 # Install android app repo
-ARG ANDROID_APP_REPOSITORY=https://github.com/schoddle/edx-app-android
+ARG ANDROID_APP_REPOSITORY=https://github.com/openedx/edx-app-android
 ARG ANDROID_APP_VERSION=master
-RUN git clone $ANDROID_APP_REPOSITORY --branch $ANDROID_APP_VERSION /app/edx-app-android
+RUN git clone $ANDROID_APP_REPOSITORY --branch master /app/edx-app-android
 WORKDIR /app/edx-app-android
 
 # Install gradle and all dependencies
